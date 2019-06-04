@@ -1,0 +1,73 @@
+---
+layout: base.njk
+title: Search
+---
+
+<div class="container mx-auto p-4">
+  <nav class="breadcrumb" aria-label="breadcrumb">
+    <ol>
+      <li class="breadcrumb_item">
+        <a class="breadcrumb_link" href="/">Home</a>
+      </li>
+      <li class="breadcrumb_item">
+        <a class="breadcrumb_link" href="/dataset" aria-current="page">Datasets</a>
+      </li>
+    </ol>
+  </nav>
+</div>
+
+<div class="container mx-auto md:flex p-4">
+  <div class="md:w-1/4 md:mr-16">
+    {% include "search-filter.njk" %}
+    {% include "search-filter.njk" %}
+  </div>
+
+  <main class="md:w-3/4">
+
+    <form>
+      <div class="relative mb-10">
+        <input type="text" class="border-2 border-solid border-gray-100 p-4 text-xl outline-none focus:border-secondary w-full" placeholder="Search datasets">
+
+        <button class="absolute inset-y-0 right-0" type="submit" value="search">
+          Icon
+        </button>
+      </div>
+
+      <div class="lg:flex items-center justify-between">
+        <h1 class="text-4xl font-semibold text-primary">99 datasets found</h1>
+
+        <div>
+          <label for="field-order-by">Order by:</label>
+          <select class="bg-white" id="field-order-by" name="sort">
+            <option value="score desc, metadata_modified desc" selected="selected">Relevance</option>
+            <option value="title_string asc">Name Ascending</option>
+            <option value="title_string desc">Name Descending</option>
+            <option value="metadata_modified desc">Last Modified</option>
+            <option value="views_recent desc">Popular</option>
+          </select>
+        </div>
+      </div>
+
+
+      <p class="mt-5">
+        <span class="py-2 mr-1">Organizations:</span>
+        <span class="bg-secondary text-white px-3 py-2 mx-1">Item two
+          <a href="#" class="" aria-label="Remove">x</a>
+        </span>
+      </p>
+
+    </form>
+
+
+
+    <ul>
+      <li class="mt-10">
+        {% include "search-result.njk" %}
+      </li>
+      <li class="mt-10">
+        {% include "search-result.njk" %}
+      </li>
+    </ul>
+
+  </main>
+</div>

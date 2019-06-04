@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container mx-auto flex justify-between p-4 items-center">
+        <a>Logo</a>
+        <nav class="my-4">
+          <ul class="flex">
+            <li>
+              <a class="main-nav_link">Blog</a>
+            </li>
+            <li>
+              <a class="main-nav_link">Knowledge</a>
+            </li>
+            <li>
+              <a class="main-nav_link" aria-current="true">Data</a>
+            </li>
+            <li>
+              <a class="main-nav_link">About</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    {{ content | safe }}
+  </body>
+</html>
