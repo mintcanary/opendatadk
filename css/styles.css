@@ -1712,6 +1712,10 @@ body {
   height: 1px;
 }
 
+.h-gutter {
+  height: 1.5rem;
+}
+
 .h-full {
   height: 100%;
 }
@@ -1844,6 +1848,10 @@ body {
   margin: 1px;
 }
 
+.m-gutter {
+  margin: 1.5rem;
+}
+
 .-m-1 {
   margin: -0.25rem;
 }
@@ -1914,6 +1922,10 @@ body {
 
 .-m-px {
   margin: -1px;
+}
+
+.-m-gutter {
+  margin: -1.5rem;
 }
 
 .my-0 {
@@ -2116,6 +2128,16 @@ body {
   margin-right: 1px;
 }
 
+.my-gutter {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.mx-gutter {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
 .-my-1 {
   margin-top: -0.25rem;
   margin-bottom: -0.25rem;
@@ -2294,6 +2316,16 @@ body {
 .-mx-px {
   margin-left: -1px;
   margin-right: -1px;
+}
+
+.-my-gutter {
+  margin-top: -1.5rem;
+  margin-bottom: -1.5rem;
+}
+
+.-mx-gutter {
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
 }
 
 .mt-0 {
@@ -2616,6 +2648,22 @@ body {
   margin-left: 1px;
 }
 
+.mt-gutter {
+  margin-top: 1.5rem;
+}
+
+.mr-gutter {
+  margin-right: 1.5rem;
+}
+
+.mb-gutter {
+  margin-bottom: 1.5rem;
+}
+
+.ml-gutter {
+  margin-left: 1.5rem;
+}
+
 .-mt-1 {
   margin-top: -0.25rem;
 }
@@ -2902,6 +2950,22 @@ body {
 
 .-ml-px {
   margin-left: -1px;
+}
+
+.-mt-gutter {
+  margin-top: -1.5rem;
+}
+
+.-mr-gutter {
+  margin-right: -1.5rem;
+}
+
+.-mb-gutter {
+  margin-bottom: -1.5rem;
+}
+
+.-ml-gutter {
+  margin-left: -1.5rem;
 }
 
 .max-h-full {
@@ -3192,6 +3256,10 @@ body {
   padding: 1px;
 }
 
+.p-gutter {
+  padding: 1.5rem;
+}
+
 .py-0 {
   padding-top: 0;
   padding-bottom: 0;
@@ -3380,6 +3448,16 @@ body {
 .px-px {
   padding-left: 1px;
   padding-right: 1px;
+}
+
+.py-gutter {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.px-gutter {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .pt-0 {
@@ -3684,6 +3762,22 @@ body {
 
 .pl-px {
   padding-left: 1px;
+}
+
+.pt-gutter {
+  padding-top: 1.5rem;
+}
+
+.pr-gutter {
+  padding-right: 1.5rem;
+}
+
+.pb-gutter {
+  padding-bottom: 1.5rem;
+}
+
+.pl-gutter {
+  padding-left: 1.5rem;
 }
 
 .pointer-events-none {
@@ -4295,6 +4389,10 @@ body {
 
 .w-px {
   width: 1px;
+}
+
+.w-gutter {
+  width: 1.5rem;
 }
 
 .w-1\/2 {
@@ -5476,6 +5574,10 @@ body {
     height: 1px;
   }
 
+  .sm\:h-gutter {
+    height: 1.5rem;
+  }
+
   .sm\:h-full {
     height: 100%;
   }
@@ -5608,6 +5710,10 @@ body {
     margin: 1px;
   }
 
+  .sm\:m-gutter {
+    margin: 1.5rem;
+  }
+
   .sm\:-m-1 {
     margin: -0.25rem;
   }
@@ -5678,6 +5784,10 @@ body {
 
   .sm\:-m-px {
     margin: -1px;
+  }
+
+  .sm\:-m-gutter {
+    margin: -1.5rem;
   }
 
   .sm\:my-0 {
@@ -5880,6 +5990,16 @@ body {
     margin-right: 1px;
   }
 
+  .sm\:my-gutter {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .sm\:mx-gutter {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
   .sm\:-my-1 {
     margin-top: -0.25rem;
     margin-bottom: -0.25rem;
@@ -6058,6 +6178,16 @@ body {
   .sm\:-mx-px {
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .sm\:-my-gutter {
+    margin-top: -1.5rem;
+    margin-bottom: -1.5rem;
+  }
+
+  .sm\:-mx-gutter {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
   }
 
   .sm\:mt-0 {
@@ -6380,6 +6510,22 @@ body {
     margin-left: 1px;
   }
 
+  .sm\:mt-gutter {
+    margin-top: 1.5rem;
+  }
+
+  .sm\:mr-gutter {
+    margin-right: 1.5rem;
+  }
+
+  .sm\:mb-gutter {
+    margin-bottom: 1.5rem;
+  }
+
+  .sm\:ml-gutter {
+    margin-left: 1.5rem;
+  }
+
   .sm\:-mt-1 {
     margin-top: -0.25rem;
   }
@@ -6666,6 +6812,22 @@ body {
 
   .sm\:-ml-px {
     margin-left: -1px;
+  }
+
+  .sm\:-mt-gutter {
+    margin-top: -1.5rem;
+  }
+
+  .sm\:-mr-gutter {
+    margin-right: -1.5rem;
+  }
+
+  .sm\:-mb-gutter {
+    margin-bottom: -1.5rem;
+  }
+
+  .sm\:-ml-gutter {
+    margin-left: -1.5rem;
   }
 
   .sm\:max-h-full {
@@ -6956,6 +7118,10 @@ body {
     padding: 1px;
   }
 
+  .sm\:p-gutter {
+    padding: 1.5rem;
+  }
+
   .sm\:py-0 {
     padding-top: 0;
     padding-bottom: 0;
@@ -7144,6 +7310,16 @@ body {
   .sm\:px-px {
     padding-left: 1px;
     padding-right: 1px;
+  }
+
+  .sm\:py-gutter {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .sm\:px-gutter {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .sm\:pt-0 {
@@ -7448,6 +7624,22 @@ body {
 
   .sm\:pl-px {
     padding-left: 1px;
+  }
+
+  .sm\:pt-gutter {
+    padding-top: 1.5rem;
+  }
+
+  .sm\:pr-gutter {
+    padding-right: 1.5rem;
+  }
+
+  .sm\:pb-gutter {
+    padding-bottom: 1.5rem;
+  }
+
+  .sm\:pl-gutter {
+    padding-left: 1.5rem;
   }
 
   .sm\:pointer-events-none {
@@ -8059,6 +8251,10 @@ body {
 
   .sm\:w-px {
     width: 1px;
+  }
+
+  .sm\:w-gutter {
+    width: 1.5rem;
   }
 
   .sm\:w-1\/2 {
@@ -9241,6 +9437,10 @@ body {
     height: 1px;
   }
 
+  .md\:h-gutter {
+    height: 1.5rem;
+  }
+
   .md\:h-full {
     height: 100%;
   }
@@ -9373,6 +9573,10 @@ body {
     margin: 1px;
   }
 
+  .md\:m-gutter {
+    margin: 1.5rem;
+  }
+
   .md\:-m-1 {
     margin: -0.25rem;
   }
@@ -9443,6 +9647,10 @@ body {
 
   .md\:-m-px {
     margin: -1px;
+  }
+
+  .md\:-m-gutter {
+    margin: -1.5rem;
   }
 
   .md\:my-0 {
@@ -9645,6 +9853,16 @@ body {
     margin-right: 1px;
   }
 
+  .md\:my-gutter {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .md\:mx-gutter {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
   .md\:-my-1 {
     margin-top: -0.25rem;
     margin-bottom: -0.25rem;
@@ -9823,6 +10041,16 @@ body {
   .md\:-mx-px {
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .md\:-my-gutter {
+    margin-top: -1.5rem;
+    margin-bottom: -1.5rem;
+  }
+
+  .md\:-mx-gutter {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
   }
 
   .md\:mt-0 {
@@ -10145,6 +10373,22 @@ body {
     margin-left: 1px;
   }
 
+  .md\:mt-gutter {
+    margin-top: 1.5rem;
+  }
+
+  .md\:mr-gutter {
+    margin-right: 1.5rem;
+  }
+
+  .md\:mb-gutter {
+    margin-bottom: 1.5rem;
+  }
+
+  .md\:ml-gutter {
+    margin-left: 1.5rem;
+  }
+
   .md\:-mt-1 {
     margin-top: -0.25rem;
   }
@@ -10431,6 +10675,22 @@ body {
 
   .md\:-ml-px {
     margin-left: -1px;
+  }
+
+  .md\:-mt-gutter {
+    margin-top: -1.5rem;
+  }
+
+  .md\:-mr-gutter {
+    margin-right: -1.5rem;
+  }
+
+  .md\:-mb-gutter {
+    margin-bottom: -1.5rem;
+  }
+
+  .md\:-ml-gutter {
+    margin-left: -1.5rem;
   }
 
   .md\:max-h-full {
@@ -10721,6 +10981,10 @@ body {
     padding: 1px;
   }
 
+  .md\:p-gutter {
+    padding: 1.5rem;
+  }
+
   .md\:py-0 {
     padding-top: 0;
     padding-bottom: 0;
@@ -10909,6 +11173,16 @@ body {
   .md\:px-px {
     padding-left: 1px;
     padding-right: 1px;
+  }
+
+  .md\:py-gutter {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .md\:px-gutter {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .md\:pt-0 {
@@ -11213,6 +11487,22 @@ body {
 
   .md\:pl-px {
     padding-left: 1px;
+  }
+
+  .md\:pt-gutter {
+    padding-top: 1.5rem;
+  }
+
+  .md\:pr-gutter {
+    padding-right: 1.5rem;
+  }
+
+  .md\:pb-gutter {
+    padding-bottom: 1.5rem;
+  }
+
+  .md\:pl-gutter {
+    padding-left: 1.5rem;
   }
 
   .md\:pointer-events-none {
@@ -11824,6 +12114,10 @@ body {
 
   .md\:w-px {
     width: 1px;
+  }
+
+  .md\:w-gutter {
+    width: 1.5rem;
   }
 
   .md\:w-1\/2 {
@@ -13006,6 +13300,10 @@ body {
     height: 1px;
   }
 
+  .lg\:h-gutter {
+    height: 1.5rem;
+  }
+
   .lg\:h-full {
     height: 100%;
   }
@@ -13138,6 +13436,10 @@ body {
     margin: 1px;
   }
 
+  .lg\:m-gutter {
+    margin: 1.5rem;
+  }
+
   .lg\:-m-1 {
     margin: -0.25rem;
   }
@@ -13208,6 +13510,10 @@ body {
 
   .lg\:-m-px {
     margin: -1px;
+  }
+
+  .lg\:-m-gutter {
+    margin: -1.5rem;
   }
 
   .lg\:my-0 {
@@ -13410,6 +13716,16 @@ body {
     margin-right: 1px;
   }
 
+  .lg\:my-gutter {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .lg\:mx-gutter {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
   .lg\:-my-1 {
     margin-top: -0.25rem;
     margin-bottom: -0.25rem;
@@ -13588,6 +13904,16 @@ body {
   .lg\:-mx-px {
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .lg\:-my-gutter {
+    margin-top: -1.5rem;
+    margin-bottom: -1.5rem;
+  }
+
+  .lg\:-mx-gutter {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
   }
 
   .lg\:mt-0 {
@@ -13910,6 +14236,22 @@ body {
     margin-left: 1px;
   }
 
+  .lg\:mt-gutter {
+    margin-top: 1.5rem;
+  }
+
+  .lg\:mr-gutter {
+    margin-right: 1.5rem;
+  }
+
+  .lg\:mb-gutter {
+    margin-bottom: 1.5rem;
+  }
+
+  .lg\:ml-gutter {
+    margin-left: 1.5rem;
+  }
+
   .lg\:-mt-1 {
     margin-top: -0.25rem;
   }
@@ -14196,6 +14538,22 @@ body {
 
   .lg\:-ml-px {
     margin-left: -1px;
+  }
+
+  .lg\:-mt-gutter {
+    margin-top: -1.5rem;
+  }
+
+  .lg\:-mr-gutter {
+    margin-right: -1.5rem;
+  }
+
+  .lg\:-mb-gutter {
+    margin-bottom: -1.5rem;
+  }
+
+  .lg\:-ml-gutter {
+    margin-left: -1.5rem;
   }
 
   .lg\:max-h-full {
@@ -14486,6 +14844,10 @@ body {
     padding: 1px;
   }
 
+  .lg\:p-gutter {
+    padding: 1.5rem;
+  }
+
   .lg\:py-0 {
     padding-top: 0;
     padding-bottom: 0;
@@ -14674,6 +15036,16 @@ body {
   .lg\:px-px {
     padding-left: 1px;
     padding-right: 1px;
+  }
+
+  .lg\:py-gutter {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .lg\:px-gutter {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .lg\:pt-0 {
@@ -14978,6 +15350,22 @@ body {
 
   .lg\:pl-px {
     padding-left: 1px;
+  }
+
+  .lg\:pt-gutter {
+    padding-top: 1.5rem;
+  }
+
+  .lg\:pr-gutter {
+    padding-right: 1.5rem;
+  }
+
+  .lg\:pb-gutter {
+    padding-bottom: 1.5rem;
+  }
+
+  .lg\:pl-gutter {
+    padding-left: 1.5rem;
   }
 
   .lg\:pointer-events-none {
@@ -15589,6 +15977,10 @@ body {
 
   .lg\:w-px {
     width: 1px;
+  }
+
+  .lg\:w-gutter {
+    width: 1.5rem;
   }
 
   .lg\:w-1\/2 {
@@ -16771,6 +17163,10 @@ body {
     height: 1px;
   }
 
+  .xl\:h-gutter {
+    height: 1.5rem;
+  }
+
   .xl\:h-full {
     height: 100%;
   }
@@ -16903,6 +17299,10 @@ body {
     margin: 1px;
   }
 
+  .xl\:m-gutter {
+    margin: 1.5rem;
+  }
+
   .xl\:-m-1 {
     margin: -0.25rem;
   }
@@ -16973,6 +17373,10 @@ body {
 
   .xl\:-m-px {
     margin: -1px;
+  }
+
+  .xl\:-m-gutter {
+    margin: -1.5rem;
   }
 
   .xl\:my-0 {
@@ -17175,6 +17579,16 @@ body {
     margin-right: 1px;
   }
 
+  .xl\:my-gutter {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .xl\:mx-gutter {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
   .xl\:-my-1 {
     margin-top: -0.25rem;
     margin-bottom: -0.25rem;
@@ -17353,6 +17767,16 @@ body {
   .xl\:-mx-px {
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .xl\:-my-gutter {
+    margin-top: -1.5rem;
+    margin-bottom: -1.5rem;
+  }
+
+  .xl\:-mx-gutter {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
   }
 
   .xl\:mt-0 {
@@ -17675,6 +18099,22 @@ body {
     margin-left: 1px;
   }
 
+  .xl\:mt-gutter {
+    margin-top: 1.5rem;
+  }
+
+  .xl\:mr-gutter {
+    margin-right: 1.5rem;
+  }
+
+  .xl\:mb-gutter {
+    margin-bottom: 1.5rem;
+  }
+
+  .xl\:ml-gutter {
+    margin-left: 1.5rem;
+  }
+
   .xl\:-mt-1 {
     margin-top: -0.25rem;
   }
@@ -17961,6 +18401,22 @@ body {
 
   .xl\:-ml-px {
     margin-left: -1px;
+  }
+
+  .xl\:-mt-gutter {
+    margin-top: -1.5rem;
+  }
+
+  .xl\:-mr-gutter {
+    margin-right: -1.5rem;
+  }
+
+  .xl\:-mb-gutter {
+    margin-bottom: -1.5rem;
+  }
+
+  .xl\:-ml-gutter {
+    margin-left: -1.5rem;
   }
 
   .xl\:max-h-full {
@@ -18251,6 +18707,10 @@ body {
     padding: 1px;
   }
 
+  .xl\:p-gutter {
+    padding: 1.5rem;
+  }
+
   .xl\:py-0 {
     padding-top: 0;
     padding-bottom: 0;
@@ -18439,6 +18899,16 @@ body {
   .xl\:px-px {
     padding-left: 1px;
     padding-right: 1px;
+  }
+
+  .xl\:py-gutter {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .xl\:px-gutter {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .xl\:pt-0 {
@@ -18743,6 +19213,22 @@ body {
 
   .xl\:pl-px {
     padding-left: 1px;
+  }
+
+  .xl\:pt-gutter {
+    padding-top: 1.5rem;
+  }
+
+  .xl\:pr-gutter {
+    padding-right: 1.5rem;
+  }
+
+  .xl\:pb-gutter {
+    padding-bottom: 1.5rem;
+  }
+
+  .xl\:pl-gutter {
+    padding-left: 1.5rem;
   }
 
   .xl\:pointer-events-none {
@@ -19354,6 +19840,10 @@ body {
 
   .xl\:w-px {
     width: 1px;
+  }
+
+  .xl\:w-gutter {
+    width: 1.5rem;
   }
 
   .xl\:w-1\/2 {

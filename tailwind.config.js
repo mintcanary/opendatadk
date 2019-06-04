@@ -1,5 +1,12 @@
+const { spacing } = require('tailwindcss/defaultTheme')
+
 module.exports = {
   theme: {
+    extend: {
+      spacing: {
+        gutter: spacing[6]
+      }
+    },
     colors: {
       primary: '#321E41',
       secondary: '#FF3464',
