@@ -614,17 +614,19 @@ body {
   display: block;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
   font-weight: 600;
   color: #321E41;
-  font-size: 1.5rem;
-  border-bottom-width: 4px;
   border-color: #fff
 }
 
 .main-nav_link[aria-current] {
   border-color: #321E41;
+}
+
+@media (min-width: 768px) {
+  .main-nav_link {
+    border-bottom-width: 4px;
+  }
 }
 
 .breadcrumb {
