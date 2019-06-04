@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Search</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container mx-auto flex justify-between p-4 items-center">
+        <a>Logo</a>
+        <nav class="my-4">
+          <ul class="flex">
+            <li>
+              <a class="main-nav_link">Blog</a>
+            </li>
+            <li>
+              <a class="main-nav_link">Knowledge</a>
+            </li>
+            <li>
+              <a class="main-nav_link" aria-current="true">Data</a>
+            </li>
+            <li>
+              <a class="main-nav_link">About</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+<div class="container mx-auto p-4">
+  <nav class="breadcrumb" aria-label="breadcrumb">
+    <ol>
+      <li class="breadcrumb_item">
+        <a class="breadcrumb_link" href="/">Home</a>
+      </li>
+      <li class="breadcrumb_item">
+        <a class="breadcrumb_link" href="/dataset" aria-current="page">Datasets</a>
+      </li>
+    </ol>
+  </nav>
+</div>
+
+<div class="container mx-auto md:flex p-4">
+  <div class="md:w-1/4 md:mr-16">
+    <section class="mb-6">
+  <h2 class="bg-gray-100 px-4 py-3 border-t border-gray-100 font-bold">Filter name</h2>
+  <ul>
+    <li class="border-t border-gray-100">
+      <button class="filter-button" aria-label="Item one (8 results)">
+        Item one
+        <span class="filter-button_count">8</span>
+      </button>
+    </li>
+    <li class="border-t border-gray-100">
+      <button class="filter-button" aria-label="Item two (8 results)" aria-pressed="true">
+        Item two
+        <span class="filter-button_count">8</span>
+      </button>
+    </li>
+    <li class="border-t border-gray-100">
+      <button class="filter-button" aria-label="Item three (8 results)">
+        Item three
+        <span class="filter-button_count">8</span>
+      </button>
+    </li>
+    <li class="border-t border-gray-100">
+      <button class="filter-button" aria-label="Item four (8 results)">
+        Item four
+        <span class="filter-button_count">8</span>
+      </button>
+    </li>
+  </ul>
+</section>
+
+    <section class="mb-6">
+  <h2 class="bg-gray-100 px-4 py-3 border-t border-gray-100 font-bold">Filter name</h2>
+  <ul>
+    <li class="border-t border-gray-100">
+      <button class="filter-button" aria-label="Item one (8 results)">
+        Item one
+        <span class="filter-button_count">8</span>
+      </button>
+    </li>
+    <li class="border-t border-gray-100">
+      <button class="filter-button" aria-label="Item two (8 results)" aria-pressed="true">
+        Item two
+        <span class="filter-button_count">8</span>
+      </button>
+    </li>
+    <li class="border-t border-gray-100">
+      <button class="filter-button" aria-label="Item three (8 results)">
+        Item three
+        <span class="filter-button_count">8</span>
+      </button>
+    </li>
+    <li class="border-t border-gray-100">
+      <button class="filter-button" aria-label="Item four (8 results)">
+        Item four
+        <span class="filter-button_count">8</span>
+      </button>
+    </li>
+  </ul>
+</section>
+
+  </div>
+
+  <main class="md:w-3/4">
+
+    <form>
+      <div class="relative mb-10">
+        <input type="text" class="border-2 border-solid border-gray-100 p-4 text-xl outline-none focus:border-secondary w-full" placeholder="Search datasets">
+
+        <button class="absolute inset-y-0 right-0" type="submit" value="search">
+          Icon
+        </button>
+      </div>
+
+      <div class="lg:flex items-center justify-between">
+        <h1 class="text-4xl font-semibold text-primary">99 datasets found</h1>
+
+        <div>
+          <label for="field-order-by">Order by:</label>
+          <select class="bg-white" id="field-order-by" name="sort">
+            <option value="score desc, metadata_modified desc" selected="selected">Relevance</option>
+            <option value="title_string asc">Name Ascending</option>
+            <option value="title_string desc">Name Descending</option>
+            <option value="metadata_modified desc">Last Modified</option>
+            <option value="views_recent desc">Popular</option>
+          </select>
+        </div>
+      </div>
+
+
+      <p class="mt-5">
+        <span class="py-2 mr-1">Organizations:</span>
+        <span class="bg-secondary text-white px-3 py-2 mx-1">Item two
+          <a href="#" class="" aria-label="Remove">x</a>
+        </span>
+      </p>
+
+    </form>
+
+
+
+    <ul>
+      <li class="mt-10">
+        <div>
+  <h3 class="text-2xl font-semibold text-primary">
+    <a href="#">Parking spots</a>
+  </h3>
+  <a href="#" class="text-gray-500 block mt-1">Frederiksberg Kommune</a>
+  <div class="leading-relaxed mt-2">
+    <p>
+      The data set shows the location of parking spaces on public roads in Frederiksberg Municipality. The data set can be accessed in GeoJSON format (4326 - WGS 84) and can be loaded...
+    </p>
+  </div>
+</div>
+
+<ul class="mt-2">
+  <li class="inline">
+    <a href="#" data-format="geojson" class="bg-gray-100 text-sm text-gray-500 px-2 py-1">GeoJSON</a>
+  </li>
+  <li class="inline">
+    <a href="#" data-format="geojson" class="bg-gray-100 text-sm text-gray-500 px-2 py-1">CSV</a>
+  </li>
+</ul>
+
+      </li>
+      <li class="mt-10">
+        <div>
+  <h3 class="text-2xl font-semibold text-primary">
+    <a href="#">Parking spots</a>
+  </h3>
+  <a href="#" class="text-gray-500 block mt-1">Frederiksberg Kommune</a>
+  <div class="leading-relaxed mt-2">
+    <p>
+      The data set shows the location of parking spaces on public roads in Frederiksberg Municipality. The data set can be accessed in GeoJSON format (4326 - WGS 84) and can be loaded...
+    </p>
+  </div>
+</div>
+
+<ul class="mt-2">
+  <li class="inline">
+    <a href="#" data-format="geojson" class="bg-gray-100 text-sm text-gray-500 px-2 py-1">GeoJSON</a>
+  </li>
+  <li class="inline">
+    <a href="#" data-format="geojson" class="bg-gray-100 text-sm text-gray-500 px-2 py-1">CSV</a>
+  </li>
+</ul>
+
+      </li>
+    </ul>
+
+  </main>
+</div>
+
+  </body>
+</html>
