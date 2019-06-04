@@ -1,7 +1,13 @@
 .main-nav_link {
-  @apply block py-1 mx-3 font-semibold text-primary text-2xl border-b-4 border-white;
+  @apply block py-1 font-semibold text-primary border-white;
 
   &[aria-current] {
     @apply border-primary;
+  }
+}
+
+@screen md {
+  .main-nav_link {
+    @apply border-b-4;
   }
 }
