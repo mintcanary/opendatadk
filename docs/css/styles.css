@@ -584,6 +584,10 @@ body {
   margin-bottom: 1rem
 }
 
+.site-footer svg {
+  fill: currentColor
+}
+
 .container {
   width: 100%;
 }
@@ -678,6 +682,12 @@ body {
 [aria-pressed="true"] .filter-button_count {
   background-color: #fff;
   color: #FF3464
+}
+
+@media (max-width: 767px) {
+  .search-filters[data-expanded="false"] {
+    display: none;
+  }
 }
 
 .site-footer_link {
