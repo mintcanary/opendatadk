@@ -26,6 +26,12 @@
                 <li class="md:ml-3">
                   <a class="main-nav_link">About</a>
                 </li>
+                <li class="flex items-center text-primary md:ml-6">
+                  <a id="search-link" href="#">
+                    <span class="main-nav_link md:hidden">Search</span>
+                    <svg class="w-8 h-8 fill-current hidden md:block"><use xlink:href="#search" /></svg>
+                  </a>
+                </li>
               </ul>
             </nav>
           </div>
@@ -101,5 +107,7 @@
     <div class="hidden">
       {% include "symbol/svg/sprite.symbol.svg" %}
     </div>
+
+    <script src="js/scripts.js"></script>
   </body>
 </html>
