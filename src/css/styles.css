@@ -9,5 +9,6 @@
 @import "components/main-nav";
 @import "components/breadcrumb";
 @import "components/filter";
+@import "components/site-footer";
 
 @import "tailwindcss/utilities";

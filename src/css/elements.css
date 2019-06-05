@@ -1,3 +1,9 @@
 body {
   @apply text-gray-900;
 }
+
+p {
+  @nest .site-footer &:not(:last-child) {
+    @apply mb-4;
+  }
+}
