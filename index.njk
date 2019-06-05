@@ -17,7 +17,11 @@ title: Search
 </div>
 
 <div class="container mx-auto md:flex p-gutter">
-  <div class="md:w-1/3 md:mr-gutter">
+  <button id="filter-toggle" class="bg-primary w-full text-white mb-6 p-3 invisible md:hidden">
+    Toggle filters
+  </button>
+
+  <div class="search-filters md:w-1/3 md:mr-gutter">
     {% include "search-filter.njk" %}
     {% include "search-filter.njk" %}
   </div>
@@ -60,7 +64,6 @@ title: Search
       </p>
 
     </form>
-
 
 
     <ul>

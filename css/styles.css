@@ -684,6 +684,12 @@ body {
   color: #FF3464
 }
 
+@media (max-width: 767px) {
+  .search-filters[data-expanded="false"] {
+    display: none;
+  }
+}
+
 .site-footer_link {
   text-decoration: underline
 }

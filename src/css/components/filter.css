@@ -13,3 +13,9 @@
     @apply bg-white text-secondary;
   }
 }
+
+@media (max-width: 767px) {
+  .search-filters[data-expanded="false"] {
+    display: none;
+  }
+}
