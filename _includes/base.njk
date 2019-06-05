@@ -7,92 +7,96 @@
   </head>
 
   <body>
-    <header>
-      <div class="container mx-auto md:flex justify-between p-gutter items-center">
-        <a>Logo</a>
-        <nav class="mt-4 md:my-4">
-          <ul class="md:flex md:text-xl lg:text-2xl">
-            <li class="md:mx-3">
-              <a class="main-nav_link">Blog</a>
-            </li>
-            <li class="md:mx-3">
-              <a class="main-nav_link">Knowledge</a>
-            </li>
-            <li class="md:mx-3">
-              <a class="main-nav_link" aria-current="true">Data</a>
-            </li>
-            <li class="md:ml-3">
-              <a class="main-nav_link">About</a>
-            </li>
-          </ul>
-        </nav>
+    <div class="flex flex-col justify-between min-h-screen">
+      <div>
+        <header>
+          <div class="container mx-auto md:flex justify-between p-gutter items-center">
+            <a>Logo</a>
+            <nav class="mt-4 md:my-4">
+              <ul class="md:flex md:text-xl lg:text-2xl">
+                <li class="md:mx-3">
+                  <a class="main-nav_link">Blog</a>
+                </li>
+                <li class="md:mx-3">
+                  <a class="main-nav_link">Knowledge</a>
+                </li>
+                <li class="md:mx-3">
+                  <a class="main-nav_link" aria-current="true">Data</a>
+                </li>
+                <li class="md:ml-3">
+                  <a class="main-nav_link">About</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+
+        {{ content | safe }}
       </div>
-    </header>
 
-    {{ content | safe }}
+      <footer class="site-footer bg-primary text-white-75 mt-10 py-gutter text-sm fill-current">
+        <div class="container mx-auto md:flex">
+          <div class="px-gutter md:p-gutter md:w-1/3 md:flex flex-col justify-between">
+            <a class="block w-24 mb-4 hover:text-white" href="https://ckan.org/">
+              <span>Powered by</span>
+              {% include "ckan-logo.svg" %}
+            </a>
 
-    <footer class="site-footer bg-primary text-white-75 mt-10 py-gutter text-sm fill-current">
-      <div class="container mx-auto md:flex">
-        <div class="px-gutter md:p-gutter md:w-1/3 md:flex flex-col justify-between">
-          <a class="block w-24 mb-4 hover:text-white" href="https://ckan.org/">
-            <span>Powered by</span>
-            {% include "ckan-logo.svg" %}
-          </a>
+            <p>
+              Copyright 2015 Opendata.dk
+            </p>
+          </div>
 
-          <p>
-            Copyright 2015 Opendata.dk
-          </p>
+          <div class="px-gutter pt-gutter md:p-gutter md:w-1/3">
+            <h4 class="site-footer_heading">
+              Generelle henvendelser om fx use-cases, foreningen og medlemsskab
+            </h4>
+            <p>
+              <a href="mailto:info@opendata.dk" class="site-footer_link">info@opendata.dk</a> 
+            </p>
+            <h4>
+              Henvendelser til hele bestyrelsen 
+            </h4>
+            <p>
+              <a href="mailto:council@opendata.dk" class="site-footer_link">council@opendata.dk</a>
+            </p>
+            <h4>
+              Presseforespørgsler, henvendelser om sitet www.opendata.dk, arrangementer og events etc.
+            </h4>
+            <p>
+              <a href="mailto:kommunikation@opendata.dk" class="site-footer_link">kommunikation@opendata.dk</a>
+            </p>
+          </div>
+
+          <div class="px-gutter md:p-gutter md:w-1/3">
+            <h4>
+              Henvendelser om datasæt, behov og muligheder
+            </h4>
+            <p>
+              <a href="mailto:data@opendata.dk" class="site-footer_link">data@opendata.dk</a>
+            </p>
+            <h4>
+                Henvendelser om portalen portal.opendata.dk.
+            </h4>
+            <p>
+              <a href="mailto:teknik@opendata.dk" class="site-footer_link">teknik@opendata.dk</a>
+            </p>
+            <h4>
+              Her kan du også finde Open Data DK
+            </h4>
+            <ul>
+              <li>
+                <a target="_blank" href="https://www.linkedin.com/company/open-data-dk" class="site-footer_link">Linkedin </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://twitter.com/OpenDataDK" class="site-footer_link">Twitter</a>
+              </li>
+            </ul>
+
+          </div>
         </div>
-
-        <div class="px-gutter pt-gutter md:p-gutter md:w-1/3">
-          <h4 class="site-footer_heading">
-            Generelle henvendelser om fx use-cases, foreningen og medlemsskab
-          </h4>
-          <p>
-            <a href="mailto:info@opendata.dk" class="site-footer_link">info@opendata.dk</a> 
-          </p>
-          <h4>
-            Henvendelser til hele bestyrelsen 
-          </h4>
-          <p>
-            <a href="mailto:council@opendata.dk" class="site-footer_link">council@opendata.dk</a>
-          </p>
-          <h4>
-            Presseforespørgsler, henvendelser om sitet www.opendata.dk, arrangementer og events etc.
-          </h4>
-          <p>
-            <a href="mailto:kommunikation@opendata.dk" class="site-footer_link">kommunikation@opendata.dk</a>
-          </p>
-        </div>
-
-        <div class="px-gutter md:p-gutter md:w-1/3">
-          <h4>
-            Henvendelser om datasæt, behov og muligheder
-          </h4>
-          <p>
-            <a href="mailto:data@opendata.dk" class="site-footer_link">data@opendata.dk</a>
-          </p>
-          <h4>
-              Henvendelser om portalen portal.opendata.dk.
-          </h4>
-          <p>
-            <a href="mailto:teknik@opendata.dk" class="site-footer_link">teknik@opendata.dk</a>
-          </p>
-          <h4>
-            Her kan du også finde Open Data DK
-          </h4>
-          <ul>
-            <li>
-              <a target="_blank" href="https://www.linkedin.com/company/open-data-dk" class="site-footer_link">Linkedin </a>
-            </li>
-            <li>
-              <a target="_blank" href="https://twitter.com/OpenDataDK" class="site-footer_link">Twitter</a>
-            </li>
-          </ul>
-
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
 
   </body>
 </html>
