@@ -7,3 +7,9 @@ p {
     @apply mb-4;
   }
 }
+
+svg {
+  @nest .site-footer & {
+    @apply fill-current;
+  }
+}

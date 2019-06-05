@@ -584,6 +584,10 @@ body {
   margin-bottom: 1rem
 }
 
+.site-footer svg {
+  fill: currentColor
+}
+
 .container {
   width: 100%;
 }
