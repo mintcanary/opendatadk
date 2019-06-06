@@ -677,8 +677,10 @@ body {
 
 .main-nav_link {
   display: block;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   font-weight: 600;
   color: #4E4E4F;
   border-color: #fff
@@ -691,6 +693,21 @@ body {
 @media (min-width: 1024px) {
   .main-nav_link {
     border-bottom-width: 4px;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 1023px) {
+  .main-nav[data-expanded] {
+    position: absolute;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  }
+
+  .main-nav[data-expanded="false"] {
+    display: none;
   }
 }
 
@@ -725,21 +742,7 @@ body {
 
 .filter-button[aria-pressed="true"] {
   background-color: #EF4123;
-  color: #fff
-}
-
-.filter-button[aria-pressed="true"]::before {
-  content: '';
-  position: absolute;
-  width: 2em;
-  right: 100%;
-  top: 0;
-  bottom: 0;
-  background-image: url("../img/tab-mask.svg");
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  background-position: -1.25em;
-  background-color: #EF4123;
+  color: #fff;
 }
 
 .filter-button_count {
@@ -759,6 +762,22 @@ body {
 @media (max-width: 767px) {
   .search-filters[data-expanded="false"] {
     display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .filter-button[aria-pressed="true"]::before {
+    content: '';
+    position: absolute;
+    width: 2em;
+    right: 100%;
+    top: 0;
+    bottom: 0;
+    background-image: url("../img/tab-mask.svg");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: -1.25em;
+    background-color: #EF4123;
   }
 }
 
