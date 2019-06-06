@@ -6,7 +6,7 @@
   }
 }
 
-@screen md {
+@screen lg {
   .main-nav_link {
     @apply border-b-4;
   }

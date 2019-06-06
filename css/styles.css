@@ -1,3 +1,59 @@
+/* poppins-regular - latin */
+
+@font-face {
+  font-family: 'Poppins';
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  src: local('Poppins Regular'), local('Poppins-Regular'),
+       url('../fonts/poppins-v6-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/poppins-v6-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* poppins-italic - latin */
+
+@font-face {
+  font-family: 'Poppins';
+
+  font-style: italic;
+
+  font-weight: 400;
+
+  src: local('Poppins Italic'), local('Poppins-Italic'),
+       url('../fonts/poppins-v6-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/poppins-v6-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* poppins-500 - latin */
+
+@font-face {
+  font-family: 'Poppins';
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  src: local('Poppins Medium'), local('Poppins-Medium'),
+       url('../fonts/poppins-v6-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/poppins-v6-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* poppins-600 - latin */
+
+@font-face {
+  font-family: 'Poppins';
+
+  font-style: normal;
+
+  font-weight: 600;
+
+  src: local('Poppins SemiBold'), local('Poppins-SemiBold'),
+       url('../fonts/poppins-v6-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/poppins-v6-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -538,7 +594,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 /**
@@ -577,7 +633,8 @@ video {
 /* more base styles */
 
 body {
-  color: #29292A;
+  color: #4E4E4F;
+  font-family: Poppins, sans-serif;
 }
 
 .site-footer p:not(:last-child) {
@@ -623,15 +680,15 @@ body {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   font-weight: 600;
-  color: #321E41;
+  color: #4E4E4F;
   border-color: #fff
 }
 
 .main-nav_link[aria-current] {
-  border-color: #321E41;
+  border-color: #4E4E4F;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .main-nav_link {
     border-bottom-width: 4px;
   }
@@ -650,7 +707,7 @@ body {
 }
 
 .breadcrumb_link[aria-current] {
-  color: #321E41;
+  color: #4E4E4F;
   font-weight: 600;
 }
 
@@ -666,12 +723,12 @@ body {
 }
 
 .filter-button[aria-pressed="true"] {
-  background-color: #FF3464;
+  background-color: #EF4123;
   color: #fff;
 }
 
 .filter-button_count {
-  background-color: #F5F4F6;
+  background-color: #F1F2F2;
   font-size: 0.875rem;
   color: #6D6E71;
   padding-left: 0.25rem;
@@ -681,7 +738,7 @@ body {
 
 [aria-pressed="true"] .filter-button_count {
   background-color: #fff;
-  color: #FF3464
+  color: #EF4123
 }
 
 @media (max-width: 767px) {
@@ -719,11 +776,11 @@ body {
 }
 
 .bg-primary {
-  background-color: #321E41;
+  background-color: #4E4E4F;
 }
 
 .bg-secondary {
-  background-color: #FF3464;
+  background-color: #EF4123;
 }
 
 .bg-white {
@@ -735,7 +792,7 @@ body {
 }
 
 .bg-gray-100 {
-  background-color: #F5F4F6;
+  background-color: #F1F2F2;
 }
 
 .bg-gray-500 {
@@ -743,15 +800,15 @@ body {
 }
 
 .bg-gray-900 {
-  background-color: #29292A;
+  background-color: #4E4E4F;
 }
 
 .hover\:bg-primary:hover {
-  background-color: #321E41;
+  background-color: #4E4E4F;
 }
 
 .hover\:bg-secondary:hover {
-  background-color: #FF3464;
+  background-color: #EF4123;
 }
 
 .hover\:bg-white:hover {
@@ -763,7 +820,7 @@ body {
 }
 
 .hover\:bg-gray-100:hover {
-  background-color: #F5F4F6;
+  background-color: #F1F2F2;
 }
 
 .hover\:bg-gray-500:hover {
@@ -771,15 +828,15 @@ body {
 }
 
 .hover\:bg-gray-900:hover {
-  background-color: #29292A;
+  background-color: #4E4E4F;
 }
 
 .focus\:bg-primary:focus {
-  background-color: #321E41;
+  background-color: #4E4E4F;
 }
 
 .focus\:bg-secondary:focus {
-  background-color: #FF3464;
+  background-color: #EF4123;
 }
 
 .focus\:bg-white:focus {
@@ -791,7 +848,7 @@ body {
 }
 
 .focus\:bg-gray-100:focus {
-  background-color: #F5F4F6;
+  background-color: #F1F2F2;
 }
 
 .focus\:bg-gray-500:focus {
@@ -799,7 +856,7 @@ body {
 }
 
 .focus\:bg-gray-900:focus {
-  background-color: #29292A;
+  background-color: #4E4E4F;
 }
 
 .bg-bottom {
@@ -883,11 +940,11 @@ body {
 }
 
 .border-primary {
-  border-color: #321E41;
+  border-color: #4E4E4F;
 }
 
 .border-secondary {
-  border-color: #FF3464;
+  border-color: #EF4123;
 }
 
 .border-white {
@@ -899,7 +956,7 @@ body {
 }
 
 .border-gray-100 {
-  border-color: #F5F4F6;
+  border-color: #F1F2F2;
 }
 
 .border-gray-500 {
@@ -907,15 +964,15 @@ body {
 }
 
 .border-gray-900 {
-  border-color: #29292A;
+  border-color: #4E4E4F;
 }
 
 .hover\:border-primary:hover {
-  border-color: #321E41;
+  border-color: #4E4E4F;
 }
 
 .hover\:border-secondary:hover {
-  border-color: #FF3464;
+  border-color: #EF4123;
 }
 
 .hover\:border-white:hover {
@@ -927,7 +984,7 @@ body {
 }
 
 .hover\:border-gray-100:hover {
-  border-color: #F5F4F6;
+  border-color: #F1F2F2;
 }
 
 .hover\:border-gray-500:hover {
@@ -935,15 +992,15 @@ body {
 }
 
 .hover\:border-gray-900:hover {
-  border-color: #29292A;
+  border-color: #4E4E4F;
 }
 
 .focus\:border-primary:focus {
-  border-color: #321E41;
+  border-color: #4E4E4F;
 }
 
 .focus\:border-secondary:focus {
-  border-color: #FF3464;
+  border-color: #EF4123;
 }
 
 .focus\:border-white:focus {
@@ -955,7 +1012,7 @@ body {
 }
 
 .focus\:border-gray-100:focus {
-  border-color: #F5F4F6;
+  border-color: #F1F2F2;
 }
 
 .focus\:border-gray-500:focus {
@@ -963,7 +1020,7 @@ body {
 }
 
 .focus\:border-gray-900:focus {
-  border-color: #29292A;
+  border-color: #4E4E4F;
 }
 
 .rounded-none {
@@ -1565,15 +1622,7 @@ body {
 }
 
 .font-sans {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-.font-serif {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-}
-
-.font-mono {
-  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: Poppins, sans-serif;
 }
 
 .font-hairline {
@@ -4071,11 +4120,11 @@ body {
 }
 
 .text-primary {
-  color: #321E41;
+  color: #4E4E4F;
 }
 
 .text-secondary {
-  color: #FF3464;
+  color: #EF4123;
 }
 
 .text-white {
@@ -4087,7 +4136,7 @@ body {
 }
 
 .text-gray-100 {
-  color: #F5F4F6;
+  color: #F1F2F2;
 }
 
 .text-gray-500 {
@@ -4095,15 +4144,15 @@ body {
 }
 
 .text-gray-900 {
-  color: #29292A;
+  color: #4E4E4F;
 }
 
 .hover\:text-primary:hover {
-  color: #321E41;
+  color: #4E4E4F;
 }
 
 .hover\:text-secondary:hover {
-  color: #FF3464;
+  color: #EF4123;
 }
 
 .hover\:text-white:hover {
@@ -4115,7 +4164,7 @@ body {
 }
 
 .hover\:text-gray-100:hover {
-  color: #F5F4F6;
+  color: #F1F2F2;
 }
 
 .hover\:text-gray-500:hover {
@@ -4123,15 +4172,15 @@ body {
 }
 
 .hover\:text-gray-900:hover {
-  color: #29292A;
+  color: #4E4E4F;
 }
 
 .focus\:text-primary:focus {
-  color: #321E41;
+  color: #4E4E4F;
 }
 
 .focus\:text-secondary:focus {
-  color: #FF3464;
+  color: #EF4123;
 }
 
 .focus\:text-white:focus {
@@ -4143,7 +4192,7 @@ body {
 }
 
 .focus\:text-gray-100:focus {
-  color: #F5F4F6;
+  color: #F1F2F2;
 }
 
 .focus\:text-gray-500:focus {
@@ -4151,7 +4200,7 @@ body {
 }
 
 .focus\:text-gray-900:focus {
-  color: #29292A;
+  color: #4E4E4F;
 }
 
 .text-xs {
@@ -4617,11 +4666,11 @@ body {
   }
 
   .sm\:bg-primary {
-    background-color: #321E41;
+    background-color: #4E4E4F;
   }
 
   .sm\:bg-secondary {
-    background-color: #FF3464;
+    background-color: #EF4123;
   }
 
   .sm\:bg-white {
@@ -4633,7 +4682,7 @@ body {
   }
 
   .sm\:bg-gray-100 {
-    background-color: #F5F4F6;
+    background-color: #F1F2F2;
   }
 
   .sm\:bg-gray-500 {
@@ -4641,15 +4690,15 @@ body {
   }
 
   .sm\:bg-gray-900 {
-    background-color: #29292A;
+    background-color: #4E4E4F;
   }
 
   .sm\:hover\:bg-primary:hover {
-    background-color: #321E41;
+    background-color: #4E4E4F;
   }
 
   .sm\:hover\:bg-secondary:hover {
-    background-color: #FF3464;
+    background-color: #EF4123;
   }
 
   .sm\:hover\:bg-white:hover {
@@ -4661,7 +4710,7 @@ body {
   }
 
   .sm\:hover\:bg-gray-100:hover {
-    background-color: #F5F4F6;
+    background-color: #F1F2F2;
   }
 
   .sm\:hover\:bg-gray-500:hover {
@@ -4669,15 +4718,15 @@ body {
   }
 
   .sm\:hover\:bg-gray-900:hover {
-    background-color: #29292A;
+    background-color: #4E4E4F;
   }
 
   .sm\:focus\:bg-primary:focus {
-    background-color: #321E41;
+    background-color: #4E4E4F;
   }
 
   .sm\:focus\:bg-secondary:focus {
-    background-color: #FF3464;
+    background-color: #EF4123;
   }
 
   .sm\:focus\:bg-white:focus {
@@ -4689,7 +4738,7 @@ body {
   }
 
   .sm\:focus\:bg-gray-100:focus {
-    background-color: #F5F4F6;
+    background-color: #F1F2F2;
   }
 
   .sm\:focus\:bg-gray-500:focus {
@@ -4697,7 +4746,7 @@ body {
   }
 
   .sm\:focus\:bg-gray-900:focus {
-    background-color: #29292A;
+    background-color: #4E4E4F;
   }
 
   .sm\:bg-bottom {
@@ -4781,11 +4830,11 @@ body {
   }
 
   .sm\:border-primary {
-    border-color: #321E41;
+    border-color: #4E4E4F;
   }
 
   .sm\:border-secondary {
-    border-color: #FF3464;
+    border-color: #EF4123;
   }
 
   .sm\:border-white {
@@ -4797,7 +4846,7 @@ body {
   }
 
   .sm\:border-gray-100 {
-    border-color: #F5F4F6;
+    border-color: #F1F2F2;
   }
 
   .sm\:border-gray-500 {
@@ -4805,15 +4854,15 @@ body {
   }
 
   .sm\:border-gray-900 {
-    border-color: #29292A;
+    border-color: #4E4E4F;
   }
 
   .sm\:hover\:border-primary:hover {
-    border-color: #321E41;
+    border-color: #4E4E4F;
   }
 
   .sm\:hover\:border-secondary:hover {
-    border-color: #FF3464;
+    border-color: #EF4123;
   }
 
   .sm\:hover\:border-white:hover {
@@ -4825,7 +4874,7 @@ body {
   }
 
   .sm\:hover\:border-gray-100:hover {
-    border-color: #F5F4F6;
+    border-color: #F1F2F2;
   }
 
   .sm\:hover\:border-gray-500:hover {
@@ -4833,15 +4882,15 @@ body {
   }
 
   .sm\:hover\:border-gray-900:hover {
-    border-color: #29292A;
+    border-color: #4E4E4F;
   }
 
   .sm\:focus\:border-primary:focus {
-    border-color: #321E41;
+    border-color: #4E4E4F;
   }
 
   .sm\:focus\:border-secondary:focus {
-    border-color: #FF3464;
+    border-color: #EF4123;
   }
 
   .sm\:focus\:border-white:focus {
@@ -4853,7 +4902,7 @@ body {
   }
 
   .sm\:focus\:border-gray-100:focus {
-    border-color: #F5F4F6;
+    border-color: #F1F2F2;
   }
 
   .sm\:focus\:border-gray-500:focus {
@@ -4861,7 +4910,7 @@ body {
   }
 
   .sm\:focus\:border-gray-900:focus {
-    border-color: #29292A;
+    border-color: #4E4E4F;
   }
 
   .sm\:rounded-none {
@@ -5463,15 +5512,7 @@ body {
   }
 
   .sm\:font-sans {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  }
-
-  .sm\:font-serif {
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .sm\:font-mono {
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: Poppins, sans-serif;
   }
 
   .sm\:font-hairline {
@@ -7969,11 +8010,11 @@ body {
   }
 
   .sm\:text-primary {
-    color: #321E41;
+    color: #4E4E4F;
   }
 
   .sm\:text-secondary {
-    color: #FF3464;
+    color: #EF4123;
   }
 
   .sm\:text-white {
@@ -7985,7 +8026,7 @@ body {
   }
 
   .sm\:text-gray-100 {
-    color: #F5F4F6;
+    color: #F1F2F2;
   }
 
   .sm\:text-gray-500 {
@@ -7993,15 +8034,15 @@ body {
   }
 
   .sm\:text-gray-900 {
-    color: #29292A;
+    color: #4E4E4F;
   }
 
   .sm\:hover\:text-primary:hover {
-    color: #321E41;
+    color: #4E4E4F;
   }
 
   .sm\:hover\:text-secondary:hover {
-    color: #FF3464;
+    color: #EF4123;
   }
 
   .sm\:hover\:text-white:hover {
@@ -8013,7 +8054,7 @@ body {
   }
 
   .sm\:hover\:text-gray-100:hover {
-    color: #F5F4F6;
+    color: #F1F2F2;
   }
 
   .sm\:hover\:text-gray-500:hover {
@@ -8021,15 +8062,15 @@ body {
   }
 
   .sm\:hover\:text-gray-900:hover {
-    color: #29292A;
+    color: #4E4E4F;
   }
 
   .sm\:focus\:text-primary:focus {
-    color: #321E41;
+    color: #4E4E4F;
   }
 
   .sm\:focus\:text-secondary:focus {
-    color: #FF3464;
+    color: #EF4123;
   }
 
   .sm\:focus\:text-white:focus {
@@ -8041,7 +8082,7 @@ body {
   }
 
   .sm\:focus\:text-gray-100:focus {
-    color: #F5F4F6;
+    color: #F1F2F2;
   }
 
   .sm\:focus\:text-gray-500:focus {
@@ -8049,7 +8090,7 @@ body {
   }
 
   .sm\:focus\:text-gray-900:focus {
-    color: #29292A;
+    color: #4E4E4F;
   }
 
   .sm\:text-xs {
@@ -8516,11 +8557,11 @@ body {
   }
 
   .md\:bg-primary {
-    background-color: #321E41;
+    background-color: #4E4E4F;
   }
 
   .md\:bg-secondary {
-    background-color: #FF3464;
+    background-color: #EF4123;
   }
 
   .md\:bg-white {
@@ -8532,7 +8573,7 @@ body {
   }
 
   .md\:bg-gray-100 {
-    background-color: #F5F4F6;
+    background-color: #F1F2F2;
   }
 
   .md\:bg-gray-500 {
@@ -8540,15 +8581,15 @@ body {
   }
 
   .md\:bg-gray-900 {
-    background-color: #29292A;
+    background-color: #4E4E4F;
   }
 
   .md\:hover\:bg-primary:hover {
-    background-color: #321E41;
+    background-color: #4E4E4F;
   }
 
   .md\:hover\:bg-secondary:hover {
-    background-color: #FF3464;
+    background-color: #EF4123;
   }
 
   .md\:hover\:bg-white:hover {
@@ -8560,7 +8601,7 @@ body {
   }
 
   .md\:hover\:bg-gray-100:hover {
-    background-color: #F5F4F6;
+    background-color: #F1F2F2;
   }
 
   .md\:hover\:bg-gray-500:hover {
@@ -8568,15 +8609,15 @@ body {
   }
 
   .md\:hover\:bg-gray-900:hover {
-    background-color: #29292A;
+    background-color: #4E4E4F;
   }
 
   .md\:focus\:bg-primary:focus {
-    background-color: #321E41;
+    background-color: #4E4E4F;
   }
 
   .md\:focus\:bg-secondary:focus {
-    background-color: #FF3464;
+    background-color: #EF4123;
   }
 
   .md\:focus\:bg-white:focus {
@@ -8588,7 +8629,7 @@ body {
   }
 
   .md\:focus\:bg-gray-100:focus {
-    background-color: #F5F4F6;
+    background-color: #F1F2F2;
   }
 
   .md\:focus\:bg-gray-500:focus {
@@ -8596,7 +8637,7 @@ body {
   }
 
   .md\:focus\:bg-gray-900:focus {
-    background-color: #29292A;
+    background-color: #4E4E4F;
   }
 
   .md\:bg-bottom {
@@ -8680,11 +8721,11 @@ body {
   }
 
   .md\:border-primary {
-    border-color: #321E41;
+    border-color: #4E4E4F;
   }
 
   .md\:border-secondary {
-    border-color: #FF3464;
+    border-color: #EF4123;
   }
 
   .md\:border-white {
@@ -8696,7 +8737,7 @@ body {
   }
 
   .md\:border-gray-100 {
-    border-color: #F5F4F6;
+    border-color: #F1F2F2;
   }
 
   .md\:border-gray-500 {
@@ -8704,15 +8745,15 @@ body {
   }
 
   .md\:border-gray-900 {
-    border-color: #29292A;
+    border-color: #4E4E4F;
   }
 
   .md\:hover\:border-primary:hover {
-    border-color: #321E41;
+    border-color: #4E4E4F;
   }
 
   .md\:hover\:border-secondary:hover {
-    border-color: #FF3464;
+    border-color: #EF4123;
   }
 
   .md\:hover\:border-white:hover {
@@ -8724,7 +8765,7 @@ body {
   }
 
   .md\:hover\:border-gray-100:hover {
-    border-color: #F5F4F6;
+    border-color: #F1F2F2;
   }
 
   .md\:hover\:border-gray-500:hover {
@@ -8732,15 +8773,15 @@ body {
   }
 
   .md\:hover\:border-gray-900:hover {
-    border-color: #29292A;
+    border-color: #4E4E4F;
   }
 
   .md\:focus\:border-primary:focus {
-    border-color: #321E41;
+    border-color: #4E4E4F;
   }
 
   .md\:focus\:border-secondary:focus {
-    border-color: #FF3464;
+    border-color: #EF4123;
   }
 
   .md\:focus\:border-white:focus {
@@ -8752,7 +8793,7 @@ body {
   }
 
   .md\:focus\:border-gray-100:focus {
-    border-color: #F5F4F6;
+    border-color: #F1F2F2;
   }
 
   .md\:focus\:border-gray-500:focus {
@@ -8760,7 +8801,7 @@ body {
   }
 
   .md\:focus\:border-gray-900:focus {
-    border-color: #29292A;
+    border-color: #4E4E4F;
   }
 
   .md\:rounded-none {
@@ -9362,15 +9403,7 @@ body {
   }
 
   .md\:font-sans {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  }
-
-  .md\:font-serif {
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .md\:font-mono {
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: Poppins, sans-serif;
   }
 
   .md\:font-hairline {
@@ -11868,11 +11901,11 @@ body {
   }
 
   .md\:text-primary {
-    color: #321E41;
+    color: #4E4E4F;
   }
 
   .md\:text-secondary {
-    color: #FF3464;
+    color: #EF4123;
   }
 
   .md\:text-white {
@@ -11884,7 +11917,7 @@ body {
   }
 
   .md\:text-gray-100 {
-    color: #F5F4F6;
+    color: #F1F2F2;
   }
 
   .md\:text-gray-500 {
@@ -11892,15 +11925,15 @@ body {
   }
 
   .md\:text-gray-900 {
-    color: #29292A;
+    color: #4E4E4F;
   }
 
   .md\:hover\:text-primary:hover {
-    color: #321E41;
+    color: #4E4E4F;
   }
 
   .md\:hover\:text-secondary:hover {
-    color: #FF3464;
+    color: #EF4123;
   }
 
   .md\:hover\:text-white:hover {
@@ -11912,7 +11945,7 @@ body {
   }
 
   .md\:hover\:text-gray-100:hover {
-    color: #F5F4F6;
+    color: #F1F2F2;
   }
 
   .md\:hover\:text-gray-500:hover {
@@ -11920,15 +11953,15 @@ body {
   }
 
   .md\:hover\:text-gray-900:hover {
-    color: #29292A;
+    color: #4E4E4F;
   }
 
   .md\:focus\:text-primary:focus {
-    color: #321E41;
+    color: #4E4E4F;
   }
 
   .md\:focus\:text-secondary:focus {
-    color: #FF3464;
+    color: #EF4123;
   }
 
   .md\:focus\:text-white:focus {
@@ -11940,7 +11973,7 @@ body {
   }
 
   .md\:focus\:text-gray-100:focus {
-    color: #F5F4F6;
+    color: #F1F2F2;
   }
 
   .md\:focus\:text-gray-500:focus {
@@ -11948,7 +11981,7 @@ body {
   }
 
   .md\:focus\:text-gray-900:focus {
-    color: #29292A;
+    color: #4E4E4F;
   }
 
   .md\:text-xs {
@@ -12415,11 +12448,11 @@ body {
   }
 
   .lg\:bg-primary {
-    background-color: #321E41;
+    background-color: #4E4E4F;
   }
 
   .lg\:bg-secondary {
-    background-color: #FF3464;
+    background-color: #EF4123;
   }
 
   .lg\:bg-white {
@@ -12431,7 +12464,7 @@ body {
   }
 
   .lg\:bg-gray-100 {
-    background-color: #F5F4F6;
+    background-color: #F1F2F2;
   }
 
   .lg\:bg-gray-500 {
@@ -12439,15 +12472,15 @@ body {
   }
 
   .lg\:bg-gray-900 {
-    background-color: #29292A;
+    background-color: #4E4E4F;
   }
 
   .lg\:hover\:bg-primary:hover {
-    background-color: #321E41;
+    background-color: #4E4E4F;
   }
 
   .lg\:hover\:bg-secondary:hover {
-    background-color: #FF3464;
+    background-color: #EF4123;
   }
 
   .lg\:hover\:bg-white:hover {
@@ -12459,7 +12492,7 @@ body {
   }
 
   .lg\:hover\:bg-gray-100:hover {
-    background-color: #F5F4F6;
+    background-color: #F1F2F2;
   }
 
   .lg\:hover\:bg-gray-500:hover {
@@ -12467,15 +12500,15 @@ body {
   }
 
   .lg\:hover\:bg-gray-900:hover {
-    background-color: #29292A;
+    background-color: #4E4E4F;
   }
 
   .lg\:focus\:bg-primary:focus {
-    background-color: #321E41;
+    background-color: #4E4E4F;
   }
 
   .lg\:focus\:bg-secondary:focus {
-    background-color: #FF3464;
+    background-color: #EF4123;
   }
 
   .lg\:focus\:bg-white:focus {
@@ -12487,7 +12520,7 @@ body {
   }
 
   .lg\:focus\:bg-gray-100:focus {
-    background-color: #F5F4F6;
+    background-color: #F1F2F2;
   }
 
   .lg\:focus\:bg-gray-500:focus {
@@ -12495,7 +12528,7 @@ body {
   }
 
   .lg\:focus\:bg-gray-900:focus {
-    background-color: #29292A;
+    background-color: #4E4E4F;
   }
 
   .lg\:bg-bottom {
@@ -12579,11 +12612,11 @@ body {
   }
 
   .lg\:border-primary {
-    border-color: #321E41;
+    border-color: #4E4E4F;
   }
 
   .lg\:border-secondary {
-    border-color: #FF3464;
+    border-color: #EF4123;
   }
 
   .lg\:border-white {
@@ -12595,7 +12628,7 @@ body {
   }
 
   .lg\:border-gray-100 {
-    border-color: #F5F4F6;
+    border-color: #F1F2F2;
   }
 
   .lg\:border-gray-500 {
@@ -12603,15 +12636,15 @@ body {
   }
 
   .lg\:border-gray-900 {
-    border-color: #29292A;
+    border-color: #4E4E4F;
   }
 
   .lg\:hover\:border-primary:hover {
-    border-color: #321E41;
+    border-color: #4E4E4F;
   }
 
   .lg\:hover\:border-secondary:hover {
-    border-color: #FF3464;
+    border-color: #EF4123;
   }
 
   .lg\:hover\:border-white:hover {
@@ -12623,7 +12656,7 @@ body {
   }
 
   .lg\:hover\:border-gray-100:hover {
-    border-color: #F5F4F6;
+    border-color: #F1F2F2;
   }
 
   .lg\:hover\:border-gray-500:hover {
@@ -12631,15 +12664,15 @@ body {
   }
 
   .lg\:hover\:border-gray-900:hover {
-    border-color: #29292A;
+    border-color: #4E4E4F;
   }
 
   .lg\:focus\:border-primary:focus {
-    border-color: #321E41;
+    border-color: #4E4E4F;
   }
 
   .lg\:focus\:border-secondary:focus {
-    border-color: #FF3464;
+    border-color: #EF4123;
   }
 
   .lg\:focus\:border-white:focus {
@@ -12651,7 +12684,7 @@ body {
   }
 
   .lg\:focus\:border-gray-100:focus {
-    border-color: #F5F4F6;
+    border-color: #F1F2F2;
   }
 
   .lg\:focus\:border-gray-500:focus {
@@ -12659,7 +12692,7 @@ body {
   }
 
   .lg\:focus\:border-gray-900:focus {
-    border-color: #29292A;
+    border-color: #4E4E4F;
   }
 
   .lg\:rounded-none {
@@ -13261,15 +13294,7 @@ body {
   }
 
   .lg\:font-sans {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  }
-
-  .lg\:font-serif {
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .lg\:font-mono {
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: Poppins, sans-serif;
   }
 
   .lg\:font-hairline {
@@ -15767,11 +15792,11 @@ body {
   }
 
   .lg\:text-primary {
-    color: #321E41;
+    color: #4E4E4F;
   }
 
   .lg\:text-secondary {
-    color: #FF3464;
+    color: #EF4123;
   }
 
   .lg\:text-white {
@@ -15783,7 +15808,7 @@ body {
   }
 
   .lg\:text-gray-100 {
-    color: #F5F4F6;
+    color: #F1F2F2;
   }
 
   .lg\:text-gray-500 {
@@ -15791,15 +15816,15 @@ body {
   }
 
   .lg\:text-gray-900 {
-    color: #29292A;
+    color: #4E4E4F;
   }
 
   .lg\:hover\:text-primary:hover {
-    color: #321E41;
+    color: #4E4E4F;
   }
 
   .lg\:hover\:text-secondary:hover {
-    color: #FF3464;
+    color: #EF4123;
   }
 
   .lg\:hover\:text-white:hover {
@@ -15811,7 +15836,7 @@ body {
   }
 
   .lg\:hover\:text-gray-100:hover {
-    color: #F5F4F6;
+    color: #F1F2F2;
   }
 
   .lg\:hover\:text-gray-500:hover {
@@ -15819,15 +15844,15 @@ body {
   }
 
   .lg\:hover\:text-gray-900:hover {
-    color: #29292A;
+    color: #4E4E4F;
   }
 
   .lg\:focus\:text-primary:focus {
-    color: #321E41;
+    color: #4E4E4F;
   }
 
   .lg\:focus\:text-secondary:focus {
-    color: #FF3464;
+    color: #EF4123;
   }
 
   .lg\:focus\:text-white:focus {
@@ -15839,7 +15864,7 @@ body {
   }
 
   .lg\:focus\:text-gray-100:focus {
-    color: #F5F4F6;
+    color: #F1F2F2;
   }
 
   .lg\:focus\:text-gray-500:focus {
@@ -15847,7 +15872,7 @@ body {
   }
 
   .lg\:focus\:text-gray-900:focus {
-    color: #29292A;
+    color: #4E4E4F;
   }
 
   .lg\:text-xs {
@@ -16314,11 +16339,11 @@ body {
   }
 
   .xl\:bg-primary {
-    background-color: #321E41;
+    background-color: #4E4E4F;
   }
 
   .xl\:bg-secondary {
-    background-color: #FF3464;
+    background-color: #EF4123;
   }
 
   .xl\:bg-white {
@@ -16330,7 +16355,7 @@ body {
   }
 
   .xl\:bg-gray-100 {
-    background-color: #F5F4F6;
+    background-color: #F1F2F2;
   }
 
   .xl\:bg-gray-500 {
@@ -16338,15 +16363,15 @@ body {
   }
 
   .xl\:bg-gray-900 {
-    background-color: #29292A;
+    background-color: #4E4E4F;
   }
 
   .xl\:hover\:bg-primary:hover {
-    background-color: #321E41;
+    background-color: #4E4E4F;
   }
 
   .xl\:hover\:bg-secondary:hover {
-    background-color: #FF3464;
+    background-color: #EF4123;
   }
 
   .xl\:hover\:bg-white:hover {
@@ -16358,7 +16383,7 @@ body {
   }
 
   .xl\:hover\:bg-gray-100:hover {
-    background-color: #F5F4F6;
+    background-color: #F1F2F2;
   }
 
   .xl\:hover\:bg-gray-500:hover {
@@ -16366,15 +16391,15 @@ body {
   }
 
   .xl\:hover\:bg-gray-900:hover {
-    background-color: #29292A;
+    background-color: #4E4E4F;
   }
 
   .xl\:focus\:bg-primary:focus {
-    background-color: #321E41;
+    background-color: #4E4E4F;
   }
 
   .xl\:focus\:bg-secondary:focus {
-    background-color: #FF3464;
+    background-color: #EF4123;
   }
 
   .xl\:focus\:bg-white:focus {
@@ -16386,7 +16411,7 @@ body {
   }
 
   .xl\:focus\:bg-gray-100:focus {
-    background-color: #F5F4F6;
+    background-color: #F1F2F2;
   }
 
   .xl\:focus\:bg-gray-500:focus {
@@ -16394,7 +16419,7 @@ body {
   }
 
   .xl\:focus\:bg-gray-900:focus {
-    background-color: #29292A;
+    background-color: #4E4E4F;
   }
 
   .xl\:bg-bottom {
@@ -16478,11 +16503,11 @@ body {
   }
 
   .xl\:border-primary {
-    border-color: #321E41;
+    border-color: #4E4E4F;
   }
 
   .xl\:border-secondary {
-    border-color: #FF3464;
+    border-color: #EF4123;
   }
 
   .xl\:border-white {
@@ -16494,7 +16519,7 @@ body {
   }
 
   .xl\:border-gray-100 {
-    border-color: #F5F4F6;
+    border-color: #F1F2F2;
   }
 
   .xl\:border-gray-500 {
@@ -16502,15 +16527,15 @@ body {
   }
 
   .xl\:border-gray-900 {
-    border-color: #29292A;
+    border-color: #4E4E4F;
   }
 
   .xl\:hover\:border-primary:hover {
-    border-color: #321E41;
+    border-color: #4E4E4F;
   }
 
   .xl\:hover\:border-secondary:hover {
-    border-color: #FF3464;
+    border-color: #EF4123;
   }
 
   .xl\:hover\:border-white:hover {
@@ -16522,7 +16547,7 @@ body {
   }
 
   .xl\:hover\:border-gray-100:hover {
-    border-color: #F5F4F6;
+    border-color: #F1F2F2;
   }
 
   .xl\:hover\:border-gray-500:hover {
@@ -16530,15 +16555,15 @@ body {
   }
 
   .xl\:hover\:border-gray-900:hover {
-    border-color: #29292A;
+    border-color: #4E4E4F;
   }
 
   .xl\:focus\:border-primary:focus {
-    border-color: #321E41;
+    border-color: #4E4E4F;
   }
 
   .xl\:focus\:border-secondary:focus {
-    border-color: #FF3464;
+    border-color: #EF4123;
   }
 
   .xl\:focus\:border-white:focus {
@@ -16550,7 +16575,7 @@ body {
   }
 
   .xl\:focus\:border-gray-100:focus {
-    border-color: #F5F4F6;
+    border-color: #F1F2F2;
   }
 
   .xl\:focus\:border-gray-500:focus {
@@ -16558,7 +16583,7 @@ body {
   }
 
   .xl\:focus\:border-gray-900:focus {
-    border-color: #29292A;
+    border-color: #4E4E4F;
   }
 
   .xl\:rounded-none {
@@ -17160,15 +17185,7 @@ body {
   }
 
   .xl\:font-sans {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  }
-
-  .xl\:font-serif {
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .xl\:font-mono {
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: Poppins, sans-serif;
   }
 
   .xl\:font-hairline {
@@ -19666,11 +19683,11 @@ body {
   }
 
   .xl\:text-primary {
-    color: #321E41;
+    color: #4E4E4F;
   }
 
   .xl\:text-secondary {
-    color: #FF3464;
+    color: #EF4123;
   }
 
   .xl\:text-white {
@@ -19682,7 +19699,7 @@ body {
   }
 
   .xl\:text-gray-100 {
-    color: #F5F4F6;
+    color: #F1F2F2;
   }
 
   .xl\:text-gray-500 {
@@ -19690,15 +19707,15 @@ body {
   }
 
   .xl\:text-gray-900 {
-    color: #29292A;
+    color: #4E4E4F;
   }
 
   .xl\:hover\:text-primary:hover {
-    color: #321E41;
+    color: #4E4E4F;
   }
 
   .xl\:hover\:text-secondary:hover {
-    color: #FF3464;
+    color: #EF4123;
   }
 
   .xl\:hover\:text-white:hover {
@@ -19710,7 +19727,7 @@ body {
   }
 
   .xl\:hover\:text-gray-100:hover {
-    color: #F5F4F6;
+    color: #F1F2F2;
   }
 
   .xl\:hover\:text-gray-500:hover {
@@ -19718,15 +19735,15 @@ body {
   }
 
   .xl\:hover\:text-gray-900:hover {
-    color: #29292A;
+    color: #4E4E4F;
   }
 
   .xl\:focus\:text-primary:focus {
-    color: #321E41;
+    color: #4E4E4F;
   }
 
   .xl\:focus\:text-secondary:focus {
-    color: #FF3464;
+    color: #EF4123;
   }
 
   .xl\:focus\:text-white:focus {
@@ -19738,7 +19755,7 @@ body {
   }
 
   .xl\:focus\:text-gray-100:focus {
-    color: #F5F4F6;
+    color: #F1F2F2;
   }
 
   .xl\:focus\:text-gray-500:focus {
@@ -19746,7 +19763,7 @@ body {
   }
 
   .xl\:focus\:text-gray-900:focus {
-    color: #29292A;
+    color: #4E4E4F;
   }
 
   .xl\:text-xs {
