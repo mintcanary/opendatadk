@@ -719,12 +719,27 @@ body {
   padding-bottom: 0.5rem;
   justify-content: space-between;
   align-items: center;
-  width: 100%
+  width: 100%;
+  position: relative
 }
 
 .filter-button[aria-pressed="true"] {
   background-color: #EF4123;
-  color: #fff;
+  color: #fff
+}
+
+.filter-button[aria-pressed="true"]::before {
+  content: '';
+  position: absolute;
+  width: 2em;
+  right: 100%;
+  top: 0;
+  bottom: 0;
+  background-image: url("../img/tab-mask.svg");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: -1.25em;
+  background-color: #EF4123;
 }
 
 .filter-button_count {
